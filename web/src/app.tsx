@@ -1,10 +1,13 @@
 import './styles/global.css'
-import { Habit } from './components/habit'
+import { Header, SummaryTable } from './components'
 
 export function App() {
   return (
-    <div className="app">
-      {[1, 2, 3].map((index) => <Habit key={index} />)}
+    <div className='w-screen h-screen flex justify-center items-center'>
+      <div className='w-full max-w-5xl px-6 flex flex-col gap-16'>
+        <Header />
+        <SummaryTable />
+      </div>
     </div>
   )
 }
