@@ -1,4 +1,4 @@
-import { Dimensions } from "react-native"
+import { Dimensions } from 'react-native'
 
 export const WEEK_DAYS = 7
 export const DAY_MARGIN_BETWEEN = 8

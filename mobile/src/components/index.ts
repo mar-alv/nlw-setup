@@ -1,3 +1,6 @@
+export { BackButton } from './backButton'
+export { Checkbox } from './checkbox'
 export { HabitDay } from './habitDay'
 export { Header } from './header'
 export { Loading } from './loading'
+export { ProgressBar } from './progressBar'
