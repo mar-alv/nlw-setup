@@ -7,7 +7,7 @@ import { Text, View, TouchableOpacity } from 'react-native'
 export function Header() {
   const { navigate } = useNavigation()
 
-  function handleOnNavigateToNewPage() {
+  function handleNavigateToNewPage() {
     navigate('new')
   }
 
@@ -17,7 +17,7 @@ export function Header() {
       <TouchableOpacity
         className='flex-row h-11 px-4 border border-violet-500 rounded-lg items-center'
         activeOpacity={0.7}
-        onPress={handleOnNavigateToNewPage}
+        onPress={handleNavigateToNewPage}
       >
         <Feather
           size={20}
