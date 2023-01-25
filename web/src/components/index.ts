@@ -1,4 +1,5 @@
 export { HabitDay } from './habitDay'
+export { HabitsList } from './habitsList'
 export { Header } from './header'
 export { NewHabitForm } from './newHabitForm'
 export { ProgressBar } from './progressBar'

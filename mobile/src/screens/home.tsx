@@ -1,10 +1,10 @@
 import dayjs from 'dayjs'
 import { api } from '../lib/axios'
 import { DAY_SIZE } from '../constants'
-import { useEffect, useState } from 'react'
+import { useCallback, useState } from 'react'
 import { Header, HabitDay, Loading } from '../components'
-import { useNavigation } from '@react-navigation/native'
 import { Text, View, ScrollView, Alert } from 'react-native'
+import { useFocusEffect, useNavigation } from '@react-navigation/native'
 import { generateDatesFromBeginningYear } from '../utils/generateDatesFromBeginningYear'
 
 const weekDays = ['D', 'S', 'T', 'Q', 'Q', 'S', 'S']
@@ -41,9 +41,9 @@ export function Home() {
     }
   }
 
-  useEffect(() => {
+  useFocusEffect(useCallback(() => {
     fetchData()
-  }, [])
+  }, []))
 
   function handleNavigateToHabit(date: Date) {
     navigate('habit', { date: date.toISOString() })
